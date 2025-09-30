@@ -30,10 +30,10 @@
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <x-div-link href="/">Home</x-div-link>
-              <x-div-link href="/login">Login</x-div-link>
-              <x-div-link href="/register">Register</x-div-link>
-              <x-div-link href="/about" active="hshgabg">About</x-div-link>
+              <x-div-link href="/" :active="request()->is('/')">Home</x-div-link>
+              <x-div-link href="/movie" :active="request()->is('movie')">Movies</x-div-link>
+              <x-div-link href="/register" :active="request()->is('register')">Register</x-div-link>
+              <x-div-link href="/about" :active="request()->is('about')">About</x-div-link>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
       <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
               <a href="/" aria-current="page" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Home</a>
-              <a href="/login" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Login</a>
+              <a href="/movie" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Movies</a>
               <a href="/register" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Register</a>
               <a href="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">About</a>
       </div>
