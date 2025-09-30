@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <a href="/login">Login</a>
-        <a href="/register">Register</a>
-        <a href="/about">About page</a> 
-    </nav>
-    <h1>About page😀</h1>
-</body>
-</html>
+<x-layout> 
+        <x-slot:heading>
+        About Us
+    </x-slot:heading>
+    <h2 class="text-2xl"> Titanic</h2> 
+</x-layout>

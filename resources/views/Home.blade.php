@@ -1,3 +1,6 @@
 <x-layout> 
-    <h1> Welcome! Look for your music taste😀</h1>
+    <x-slot:heading>
+        Movie Review
+    </x-slot:heading>
+    <h2 class="text-2xl"> Titanic</h2> 
 </x-layout>
