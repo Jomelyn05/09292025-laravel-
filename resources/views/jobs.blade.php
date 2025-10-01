@@ -4,9 +4,9 @@
     </x-slot:heading>
     
     <ul>
-        @foreach ($movies as $movie)
+        @foreach ($jobs as $job)
             <li>
-                <a href="/movies/{{ $movie['id'] }}" class="text-red-500 hover:underline">{{ $movie['title'] }}:
+                <a href="/jobs/{{ $job['id'] }}" class="text-red-500 hover:underline">{{ $job['title'] }}:
                 </a>
             </li>
          @endforeach

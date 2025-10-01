@@ -3,9 +3,9 @@
         Movie Rev
     </x-slot:heading>
     
-    <h2 class="text-2xl font-bold">{{ $movies['title'] }}</h2>
+    <h2 class="text-2xl font-bold">{{ $job['title'] }}</h2>
     <p>
-        Description {{ $movies['about'] }}
+        This pay: {{ $job['about'] }}
     </p>
     
 </x-layout>
