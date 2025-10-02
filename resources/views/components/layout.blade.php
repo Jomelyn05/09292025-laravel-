@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full bg-gray-100">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,15 @@
     <title>Home Page</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="h-full">
+<body class="bg-[url('https://cdn.pixabay.com/photo/2016/04/02/09/43/apple-1302430_1280.jpg')]">
     
 <div class="min-h-full">
-  <nav class="bg-sky-600/70">
+  <nav class="bg-yellow-800/70">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           <div class="shrink-0">
-            <img src="https://cdn-icons-png.flaticon.com/128/1436/1436690.png" alt="Your Company" class="size-8" />
+            <img src="https://cdn-icons-png.flaticon.com/128/3850/3850285.png" alt="Your Company" class="size-8" />
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4 text-white">
@@ -42,7 +42,7 @@
               <button class="relative flex max-w-xs items-center rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
                 <span class="absolute -inset-1.5"></span>
                 <span class="sr-only">Open user menu</span>
-                <img src="https://bookingagentinfo.com/wp-content/uploads/2024/03/ab6761610000e5ebd95cf4457fac4cc62311f84f.jpg" alt="" class="size-8 rounded-full outline -outline-offset-1 outline-white/10" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW_-Nk7VpUfwsRYltnnq6male5PEhYj2COKA&s" alt="" class="size-8 rounded-full outline -outline-offset-1 outline-white/10" />
               </button>
             </el-dropdown>
           </div>
@@ -76,8 +76,8 @@
             <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="size-10 rounded-full outline -outline-offset-1 outline-white/10" />
           </div>
           <div class="ml-3">
-            <div class="text-base/5 font-medium text-white">Faby</div>
-            <div class="text-sm font-medium text-gray-400">faby@example.com</div>
+            <div class="text-base/5 font-medium text-white">Secret</div>
+            <div class="text-sm font-medium text-gray-400">Secret@example.com</div>
           </div>
           <button type="button" class="relative ml-auto shrink-0 rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
             <span class="absolute -inset-1.5"></span>
@@ -91,7 +91,7 @@
     </el-disclosure>
   </nav>
 
-  <header class="relative bg-white shadow-sm">
+  <header class="relative bg-green-100/50 shadow-sm">
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{ $heading }}</h1>
     </div>

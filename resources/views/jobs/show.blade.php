@@ -5,7 +5,7 @@
     
     <h2 class="text-2xl font-bold">{{ $job['title'] }}</h2>
     <p>
-        This pay: {{ $job['about'] }}
+        This pay: {{ $job['salary'] }}
     </p>
     
 </x-layout>

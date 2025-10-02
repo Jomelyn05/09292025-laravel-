@@ -14,17 +14,19 @@ Route::get('/contact', function () {
 });
 
 Route::get('/jobs', function () {
-    return view('jobs', [
-        'jobs' => Job::all(), // Correct model name and capitalization
+    $jobs = Job::with('employer')->simplePaginate(3);
+    return view('jobs.index', [
+        'jobs' => $jobs // Correct model name and capitalization
     ]);
+});
+
+Route::get('/jobs/create', function () {
+    return view('jobs.create');
 });
 
 Route::get('/jobs/{id}', function ($id) {
     $job = Job::findOrFail($id); // Use singular and findOrFail to handle missing records
     
-    return view('job', ['job' => $job]); // Singular 'job', and singular variable
+    return view('jobs.show', ['job' => $job]); // Singular 'job', and singular variable
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
